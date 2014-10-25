@@ -1,0 +1,35 @@
+@import "../modules/all"; // Variables, mixins, colors
+/*
+==========================================================================
+	BASE STYLES (scss/partials/_base.scss)
+==========================================================================
+*/
+
+//
+// BASE PAGE STYLES
+//
+
+/* Global Box Sizing and Font-Smoothing */	  
+*, *:after, *:before {
+	box-sizing:border-box;
+	-webkit-box-sizing:border-box;
+	-moz-box-sizing:border-box;
+	-webkit-font-smoothing:antialiased;
+	-moz-font-smoothing:antialiased;
+	-moz-osx-font-smoothing: grayscale;
+	-o-font-smoothing:antialiased;
+	font-smoothing:antialiased;
+	text-rendering:optimizeLegibility;
+}
+
+html,
+button,
+input,
+select,
+textarea {
+	
+}
+
+html {
+	
+}

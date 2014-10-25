@@ -1,0 +1,69 @@
+//
+//	FONT FAMILIES
+//
+@mixin good-headline-book {
+	font-family: "ff-good-headline-web-pro-con",sans-serif;
+  font-style: normal;
+  font-weight: 400;
+}
+@mixin good-headline-book-italic {
+  font-family: "ff-good-headline-web-pro-con",sans-serif;
+  font-style: italic;
+  font-weight: 400;
+}
+@mixin good-headline-medium {
+  font-family: "ff-good-headline-web-pro-con",sans-serif;
+  font-style: normal;
+  font-weight: 500;
+}
+@mixin good-headline-medium-italic {
+  font-family: "ff-good-headline-web-pro-con",sans-serif;
+  font-style: italic;
+  font-weight: 500;
+}
+@mixin good-headline-black {
+  font-family: "ff-good-headline-web-pro-con",sans-serif;
+  font-style: normal;
+  font-weight: 900;
+}
+@mixin good-headline-black-italic {
+  font-family: "ff-good-headline-web-pro-con",sans-serif;
+  font-style: italic;
+  font-weight: 900;
+}
+
+@mixin franklin-gothic-light {
+  font-family: "franklin-gothic-urw",sans-serif;
+  font-style: normal;
+  font-weight: 300;
+}
+@mixin franklin-gothic-book {
+  font-family: "franklin-gothic-urw",sans-serif;
+  font-style: normal;
+  font-weight: 400;
+}
+@mixin franklin-gothic-book-italic {
+  font-family: "franklin-gothic-urw",sans-serif;
+  font-style: italic;
+  font-weight: 400;
+}
+
+
+//
+//	FONT SIZES
+//
+// $bodyCopy: 13px;
+// $h1: $bodyCopy + 22px;
+// $h3: $bodyCopy + 15px;
+// $h5: $bodyCopy + 7px;
+
+//
+//	TRANSITIONS
+//
+@mixin transition($speed) {
+	-webkit-transition: all $speed ease;
+	-moz-transition: all $speed ease;
+	-ms-transition: all $speed ease;
+	-o-transition: all $speed ease;
+	transition: all $speed ease;
+}
