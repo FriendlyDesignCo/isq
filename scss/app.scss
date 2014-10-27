@@ -1,3 +1,7 @@
+// NON-FOUNDATION SCSS
+@import "modules/all"; // Variables, mixins, colors
+
+// FOUNDATION
 @import "settings";
 @import "foundation";
 
@@ -39,8 +43,11 @@
 //   "foundation/components/offcanvas",
 //   "foundation/components/visibility";
 
-// NON-FOUNDATION SCSS
+// MORE NON-FOUNDATION SCSS / ICQ SPECIFIC
 // Base styles
 @import "partials/base";
 @import "partials/helpers";
 @import "partials/print";
+
+// Partials
+@import "partials/isa-brand-bar";

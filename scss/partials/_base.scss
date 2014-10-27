@@ -1,4 +1,3 @@
-@import "../modules/all"; // Variables, mixins, colors
 /*
 ==========================================================================
 	BASE STYLES (scss/partials/_base.scss)
@@ -14,8 +13,8 @@
 	box-sizing:border-box;
 	-webkit-box-sizing:border-box;
 	-moz-box-sizing:border-box;
-	-webkit-font-smoothing:antialiased;
-	-moz-font-smoothing:antialiased;
+	-webkit-font-smoothing:antialiased;   // Improve font rendering across browsers & devices
+	-moz-font-smoothing:antialiased;      // An opinionated default from Ian Hamilton, @colorcrate
 	-moz-osx-font-smoothing: grayscale;
 	-o-font-smoothing:antialiased;
 	font-smoothing:antialiased;
