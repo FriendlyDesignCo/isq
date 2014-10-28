@@ -1,0 +1,73 @@
+/*
+==========================================================================
+  CALLOUT STYLES (scss/partials/_callouts.scss)
+==========================================================================
+*/
+
+.callout {
+  @include grid-column( // Foundation
+    $columns:6,
+    $center:true
+  );
+  padding-top: 3.125rem;
+  padding-bottom: 3.125rem;
+
+  h2 {
+    @include font-family-good-headline-medium;
+    font-size: 3.125rem;
+  }
+
+  .callout__action {
+    @include button( // Foundation
+      $padding: 0.25rem
+    );
+    
+    @include font-family-good-headline-medium;
+    font-size: 1.375rem;
+    text-transform: uppercase;
+  }
+}
+
+.callout__metadata {
+  border-top: 1px solid $coolGrayLight;
+
+  ul {
+    @include inline-list; // Foundation
+  }
+  li {
+    @include font-family-good-headline-book-italic;
+    font-size: 1.125rem;
+    text-transform: uppercase;
+
+    span {
+      display: inline;
+      color: $black-20;
+    }
+  }
+  
+  .callout__taglist {
+    display: inline;
+    float: right;
+
+    margin-left: 0;
+
+    li {
+      margin-left: 0.1875rem;
+      &:last-of-type {
+        a:after {
+          content: "";
+        }
+      }
+    }
+
+    a {
+      color: $brightBlue;
+      text-decoration: none;
+
+      &:after {
+        content:", ";
+        display: inline;
+      } 
+    }
+  }
+}

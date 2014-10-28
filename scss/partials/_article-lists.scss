@@ -1,0 +1,106 @@
+/*
+==========================================================================
+  PAGE HEADER STYLES (scss/partials/_article-lists.scss)
+==========================================================================
+*/
+
+.articleList--large,
+.articleList--small {
+
+  h6 {
+    padding-top: 0.625rem;
+    border-top: 3px solid $navyBlue;
+    color: $coolGrayLight;
+    text-transform: uppercase;
+  }
+
+  h3 {
+    border-top: 1px solid $coolGrayLight;
+    a {
+      text-decoration: none;
+      color: inherit;
+
+      &:hover {
+        color: $orange;
+      }
+    }
+  }
+
+  article {
+    margin-bottom: 3.125rem;
+  }
+
+  .article__actions {
+    @include font-family-good-headline-book;
+    font-size: 1.125rem;
+  }
+  .article__comments {
+    color: $black-20;
+    font-size: 0.9375rem;
+    text-decoration: none;
+
+    &:hover {
+      color: $orange;
+    }
+  }
+
+  .articleList__readFull {
+    @include button( // Foundation
+      $padding: 1rem,
+      $full-width: true
+    );
+    background: $brightBlue;
+    @include font-family-good-headline-medium;
+    font-size: 1.75rem;
+    text-transform: uppercase;
+  }
+}
+
+.articleList--large {
+  @include grid-column( // Foundation
+    $columns:8
+  );
+  padding-left: 0;
+
+  .article {
+    padding-left: 5.625rem;
+
+    &.pointer {
+      background-image: url(../img/article-pointer-200x200.png);
+      background-repeat: no-repeat;
+      background-size: 70px 70px;
+      background-position: 0 0;
+    }
+    &.bubbles {
+      background-image: url(../img/article-bubbles-200x200.png);
+      background-repeat: no-repeat;
+      background-size: 70px 70px;
+      background-position: 0 0;
+    }
+    &.pencil {
+      background-image: url(../img/article-pencil-200x200.png);
+      background-repeat: no-repeat;
+      background-size: 70px 70px;
+      background-position: 0 0;
+    }
+    &.tower {
+      background-image: url(../img/article-tower-200x200.png);
+      background-repeat: no-repeat;
+      background-size: 70px 70px;
+      background-position: 0 0;
+    }
+  }
+}
+
+
+.articleList--small {
+  @include grid-column( // Foundation
+    $columns:4
+  );
+  padding-right: 0;
+
+  h3 {
+    padding-top: 0.3125rem;
+    font-size: 1.5rem;
+  }
+}

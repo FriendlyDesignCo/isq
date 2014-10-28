@@ -2,49 +2,49 @@
 //	FONT FAMILIES
 //
 $good-headline: "ff-good-headline-web-pro-con",sans-serif;
-@mixin good-headline-book {
+@mixin font-family-good-headline-book {
 	font-family: $good-headline;
   font-style: normal;
   font-weight: 400;
 }
-@mixin good-headline-book-italic {
+@mixin font-family-good-headline-book-italic {
   font-family: $good-headline;
   font-style: italic;
   font-weight: 400;
 }
-@mixin good-headline-medium {
+@mixin font-family-good-headline-medium {
   font-family: $good-headline;
   font-style: normal;
   font-weight: 500;
 }
-@mixin good-headline-medium-italic {
+@mixin font-family-good-headline-medium-italic {
   font-family: $good-headline;
   font-style: italic;
   font-weight: 500;
 }
-@mixin good-headline-black {
+@mixin font-family-good-headline-black {
   font-family: $good-headline;
   font-style: normal;
   font-weight: 900;
 }
-@mixin good-headline-black-italic {
+@mixin font-family-good-headline-black-italic {
   font-family: $good-headline;
   font-style: italic;
   font-weight: 900;
 }
 
 $franklin-gothic: "franklin-gothic-urw",sans-serif;
-@mixin franklin-gothic-light {
+@mixin font-family-franklin-gothic-light {
   font-family: $franklin-gothic;
   font-style: normal;
   font-weight: 300;
 }
-@mixin franklin-gothic-book {
+@mixin font-family-franklin-gothic-book {
   font-family: $franklin-gothic;
   font-style: normal;
   font-weight: 400;
 }
-@mixin franklin-gothic-book-italic {
+@mixin font-family-franklin-gothic-book-italic {
   font-family: $franklin-gothic;
   font-style: italic;
   font-weight: 400;

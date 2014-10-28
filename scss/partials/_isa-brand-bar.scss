@@ -3,3 +3,66 @@
   ISA BRAND BAR STYLES (scss/partials/_isa-brand-bar.scss)
 ==========================================================================
 */
+
+.brandBar {
+  padding-top: 1.25rem;
+  padding-bottom: 1.26rem;
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+
+  background: $navyBlue;
+
+  .brandBar__container {
+    @include grid-row();
+    position: relative;
+  }
+}
+
+.brandBar__search {
+  width: 240px;
+  
+  float: left;
+
+  input[type=text] {
+    height: auto;
+    padding: 0.25rem 0.5rem;
+
+    margin: 0;
+  }
+}
+
+.brandBar__userControls {
+  margin-left: 1.25rem;
+  float: left;
+
+  ul {
+    @include inline-list; // Foundation
+    margin: 0;
+    padding: 0;
+  }
+  li:first-of-type {
+    margin-left: 0;
+  }
+  
+  a {
+    color: $white;
+    @include font-family-good-headline-medium;
+    text-decoration: none;
+    text-transform: uppercase;
+
+    &:hover {
+      color: $orange;
+    }
+  }
+}
+
+.brandBar__logo {
+  width: 50px;
+  height: auto;
+
+  position: absolute;
+  top: -5px;
+  right: 0;
+}

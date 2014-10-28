@@ -238,7 +238,7 @@ $h6-font-reduction: 0 !default;
 // We use these to style paragraphs
 $paragraph-font-family: $franklin-gothic;
 $paragraph-font-weight: 400;
-$paragraph-font-size: 1rem;
+$paragraph-font-size: 1.06rem;
 $paragraph-line-height: 1.6;
 $paragraph-margin-bottom: rem-calc(20);
 $paragraph-aside-font-size: rem-calc(14);
@@ -629,7 +629,7 @@ $form-label-bottom-margin: 0;
 $input-font-family: inherit;
 $input-font-color: $coolGrayDark;
 $input-font-size: rem-calc(14);
-$input-bg-color: #eff3f3;
+$input-bg-color: $coolWhite;
 $input-focus-bg-color: $white;
 $input-border-color: $brightBlue;
 $input-focus-border-color: $coolGrayLight;

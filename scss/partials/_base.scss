@@ -32,3 +32,30 @@ textarea {
 html {
 	
 }
+body {
+	padding-top: 70px; // Brand Bar height
+}
+
+a,
+input[type=text] {
+	@include transition(200ms);
+}
+
+.contentContainer {
+	@include grid-row();
+}
+
+h2, h3, h6 {
+	@include font-family-good-headline-medium;
+}
+
+h2 {
+
+  font-size: 3.125rem;
+}
+h3 {
+	font-size: 1.875rem;
+}
+h6 {
+  font-size: 1.125rem;
+}

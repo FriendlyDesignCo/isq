@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Foundation</title>
+    <title>index</title>
     <link rel="stylesheet" href="stylesheets/app.css" />
     <script src="bower_components/modernizr/modernizr.js"></script>
     <!-- Typography -->
@@ -14,18 +14,20 @@
     
     <!-- BRAND BAR -->
     <section class="brandBar">
-      <form class="brandBar__search">
-        <input type="text" placeholder="Search ISA" />
-      </form>
+      <div class="brandBar__container">
+        <form class="brandBar__search">
+          <input type="text" placeholder="Search ISA" />
+        </form>
 
-      <nav class="brandBar__userControls">
-        <ul>
-          <li><a href="#">Login</a></li>
-          <li><a href="#">Register</a></li>
-        </ul>
-      </nav>
+        <nav class="brandBar__userControls">
+          <ul>
+            <li><a href="#">Login</a></li>
+            <li><a href="#">Register</a></li>
+          </ul>
+        </nav>
 
-      <img src="#" class="brandBar__logo" alt="ISA logo" />
+        <img src="img/logo-isa-252x175.png" class="brandBar__logo" alt="ISA logo" />
+      </div>
     </section>
     <!-- END BRAND BAR -->
     
@@ -37,7 +39,7 @@
       </h1>
 
       <nav class="pageHeader__nav">
-        <ul class="button-group">
+        <ul>
           <li><a href="#" class="small button">In Print</a></li>
           <li><a href="#" class="small button">About</a></li>
           <li><a href="#" class="small button">Link Round-Ups</a></li>
@@ -51,7 +53,6 @@
       <form class="pageHeader__search">
         <input type="text" placeholder="Search ISQ" />
       </form>
-
     </header>
     <!-- END PAGE HEADER -->
 
@@ -63,7 +64,7 @@
           <h2>Transparency, Access, Confidence</h2>
         </header>
         <p>Transparency, access, confidence. These all seem like good things. Why don’t people do things that are just inherently good for the community? Why don’t they do things that encourage the three goods I began with?</p>
-        <a href="#" class="callout__action button">Read More</a>
+        <a href="#" class="callout__action">Read More</a>
 
         <footer class="callout__metadata">
           <ul>
@@ -71,7 +72,7 @@
             <li><span>ISS</span> 02</li>
             <li><span>By</span> Jane Doe</li>
             <li><span>Subjects</span>
-              <ul class="callout__taglist inline-list">
+              <ul class="callout__taglist">
                 <li><a href="#">Lorem</a></li>
                 <li><a href="#">Ipsum Dolor</a></li>
                 <li><a href="#">Sit Amet</a></li>
@@ -84,88 +85,100 @@
     <!-- END CALLOUT -->
 
 
-    <!-- ARTICLE LIST -->
-    <section class="articleList--large">
-      <header>
-        <h6>Online Exclusives</h6>
-      </header>
-
-      <article class="article">
+    <div class="contentContainer">
+      <!-- ARTICLE LIST -->
+      <section class="articleList--large">
         <header>
-          <h3>Link Round-up for August 25</h3>
+          <h6>Online Exclusives</h6>
         </header>
-        <p>From around the blogosphere: Iraq dominated the headlines this week after the video release of American journalist James Foley's beheading by ISIS. You know it's bad when al Qaeda kicks you out...</p>
-        <footer class="article__actions">
-          <a href="#">Read More</a>
-          <a class="article__comments">(# Comments)</a>
-        </footer>
-      </article>
 
-      <article class="article">
+        <article class="article pointer">
+          <header>
+            <h3><a href="#">Link Round-up for August 25</a></h3>
+          </header>
+          <p>From around the blogosphere: Iraq dominated the headlines this week after the video release of American journalist James Foley's beheading by ISIS. You know it's bad when al Qaeda kicks you out...</p>
+          <footer class="article__actions">
+            <a href="#">Read More</a>
+            <a class="article__comments">(# Comments)</a>
+          </footer>
+        </article>
+
+        <article class="article bubbles">
+          <header>
+            <h3><a href="#">The Academic and Policy Worlds: Reflections On A Divide</a></h3>
+          </header>
+          <p>From around the blogosphere: Iraq dominated the headlines this week after the video release of American journalist James Foley's beheading by ISIS. You know it's bad when al Qaeda kicks you out...</p>
+          <footer class="article__actions">
+            <a href="#">Read More</a>
+            <a class="article__comments">(# Comments)</a>
+          </footer>
+        </article>
+
+        <article class="article pencil">
+          <header>
+            <h3><a href="#">Editor’s Blog: Stardate 308255.5</a></h3>
+          </header>
+          <p>From around the blogosphere: Iraq dominated the headlines this week after the video release of American journalist James Foley's beheading by ISIS. You know it's bad when al Qaeda kicks you out...</p>
+          <footer class="article__actions">
+            <a href="#">Read More</a>
+            <a class="article__comments">(# Comments)</a>
+          </footer>
+        </article>
+
+        <article class="article tower">
+          <header>
+            <h3><a href="#">Current Events for August 25</a></h3>
+          </header>
+          <p>From around the blogosphere: Iraq dominated the headlines this week after the video release of American journalist James Foley's beheading by ISIS. You know it's bad when al Qaeda kicks you out...</p>
+          <footer class="article__actions">
+            <a href="#">Read More</a>
+            <a class="article__comments">(# Comments)</a>
+          </footer>
+        </article>
+      </section>
+      <!-- END ARTICLE LIST -->
+
+
+      <!-- SIDEBAR -->
+      <section class="articleList--small">
         <header>
-          <h3>The Academic and Policy Worlds: Reflections On A Divide</h3>
+          <h6>Current Issue</h6>
         </header>
-        <p>From around the blogosphere: Iraq dominated the headlines this week after the video release of American journalist James Foley's beheading by ISIS. You know it's bad when al Qaeda kicks you out...</p>
-        <footer class="article__actions">
-          <a href="#">Read More</a>
-          <a class="article__comments">(# Comments)</a>
-        </footer>
-      </article>
 
-      <article class="article">
-        <header>
-          <h3>Editor’s Blog: Stardate 308255.5</h3>
-        </header>
-        <p>From around the blogosphere: Iraq dominated the headlines this week after the video release of American journalist James Foley's beheading by ISIS. You know it's bad when al Qaeda kicks you out...</p>
-        <footer class="article__actions">
-          <a href="#">Read More</a>
-          <a class="article__comments">(# Comments)</a>
-        </footer>
-      </article>
+        <article class="article">
+          <header>
+            <h3><a href="#">What Do Policymakers Want From Us? Results of a Survey of Current and Former Senior National Security Decision Makers</a></h3>
+          </header>
+          <footer class="article__actions">
+            <span>By Lorem Ipsum</span>
+            <a href="#">Read More</a>
+          </footer>
+        </article>
 
-    </section>
-    <!-- END ARTICLE LIST -->
+        <article class="article">
+          <header>
+            <h3><a href="#">Dependent Diplomacy: Signaling, Strategy, and Prestige in the Diplomatic Network</a></h3>
+          </header>
+          <footer class="article__actions">
+            <span>By Lorem Ipsum</span>
+            <a href="#">Read More</a>
+          </footer>
+        </article>
+        
+        <article class="article">
+          <header>
+            <h3><a href="#">What Do Policymakers Want From Us? Results of a Survey of Current and Former Senior National Security Decision Makers</a></h3>
+          </header>
+          <footer class="article__actions">
+            <span>By Lorem Ipsum</span>
+            <a href="#">Read More</a>
+          </footer>
+        </article>
 
-
-    <!-- SIDEBAR -->
-    <section class="articleList--small--sidebar">
-      <header>
-        <h6>Current Issue</h6>
-      </header>
-
-      <article class="article">
-        <header>
-          <h3>What Do Policymakers Want From Us? Results of a Survey of Current and Former Senior National Security Decision Makers</h3>
-        </header>
-        <footer class="article__actions">
-          <span>By Lorem Ipsum</span>
-          <a href="#">Read More</a>
-        </footer>
-      </article>
-
-      <article class="article">
-        <header>
-          <h3>Dependent Diplomacy: Signaling, Strategy, and Prestige in the Diplomatic Network</h3>
-        </header>
-        <footer class="article__actions">
-          <span>By Lorem Ipsum</span>
-          <a href="#">Read More</a>
-        </footer>
-      </article>
-      
-      <article class="article">
-        <header>
-          <h3>What Do Policymakers Want From Us? Results of a Survey of Current and Former Senior National Security Decision Makers</h3>
-        </header>
-        <footer class="article__actions">
-          <span>By Lorem Ipsum</span>
-          <a href="#">Read More</a>
-        </footer>
-      </article>
-
-      <a href="#" class="button">Read Full Issue</a>
-    </section>
-    <!-- END SIDEBAR -->
+        <a href="#" class="articleList__readFull">Read Full Issue</a>
+      </section>
+      <!-- END SIDEBAR -->
+    </div> <!-- .contentContainer -->
 
     <!-- PAGE FOOTER -->
     <footer class="pageFooter">
