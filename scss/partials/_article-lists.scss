@@ -1,6 +1,6 @@
 /*
 ==========================================================================
-  PAGE HEADER STYLES (scss/partials/_article-lists.scss)
+  ARTICLE LIST STYLES (scss/partials/_article-lists.scss)
 ==========================================================================
 */
 
@@ -53,6 +53,10 @@
     @include font-family-good-headline-medium;
     font-size: 1.75rem;
     text-transform: uppercase;
+
+    &:hover {
+      background: $brightBlue-60;
+    }
   }
 }
 

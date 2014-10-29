@@ -9691,7 +9691,7 @@ h6 {
 
 /*
 ==========================================================================
-  PAGE HEADER STYLES (scss/partials/_article-lists.scss)
+  ARTICLE LIST STYLES (scss/partials/_article-lists.scss)
 ==========================================================================
 */
 /* line 10, ../scss/partials/_article-lists.scss */
@@ -9792,8 +9792,13 @@ h6 {
 .articleList--small .articleList__readFull:focus {
   color: white;
 }
+/* line 57, ../scss/partials/_article-lists.scss */
+.articleList--large .articleList__readFull:hover,
+.articleList--small .articleList__readFull:hover {
+  background: rgba(0, 190, 219, 0.6);
+}
 
-/* line 59, ../scss/partials/_article-lists.scss */
+/* line 63, ../scss/partials/_article-lists.scss */
 .articleList--large {
   padding-left: 0.9375rem;
   padding-right: 0.9375rem;
@@ -9801,32 +9806,32 @@ h6 {
   float: left;
   padding-left: 0;
 }
-/* line 65, ../scss/partials/_article-lists.scss */
+/* line 69, ../scss/partials/_article-lists.scss */
 .articleList--large .article {
   padding-left: 5.625rem;
 }
-/* line 68, ../scss/partials/_article-lists.scss */
+/* line 72, ../scss/partials/_article-lists.scss */
 .articleList--large .article.pointer {
   background-image: url(../img/article-pointer-200x200.png);
   background-repeat: no-repeat;
   background-size: 70px 70px;
   background-position: 0 0;
 }
-/* line 74, ../scss/partials/_article-lists.scss */
+/* line 78, ../scss/partials/_article-lists.scss */
 .articleList--large .article.bubbles {
   background-image: url(../img/article-bubbles-200x200.png);
   background-repeat: no-repeat;
   background-size: 70px 70px;
   background-position: 0 0;
 }
-/* line 80, ../scss/partials/_article-lists.scss */
+/* line 84, ../scss/partials/_article-lists.scss */
 .articleList--large .article.pencil {
   background-image: url(../img/article-pencil-200x200.png);
   background-repeat: no-repeat;
   background-size: 70px 70px;
   background-position: 0 0;
 }
-/* line 86, ../scss/partials/_article-lists.scss */
+/* line 90, ../scss/partials/_article-lists.scss */
 .articleList--large .article.tower {
   background-image: url(../img/article-tower-200x200.png);
   background-repeat: no-repeat;
@@ -9834,7 +9839,7 @@ h6 {
   background-position: 0 0;
 }
 
-/* line 96, ../scss/partials/_article-lists.scss */
+/* line 100, ../scss/partials/_article-lists.scss */
 .articleList--small {
   padding-left: 0.9375rem;
   padding-right: 0.9375rem;
@@ -9842,8 +9847,240 @@ h6 {
   float: left;
   padding-right: 0;
 }
-/* line 102, ../scss/partials/_article-lists.scss */
+/* line 106, ../scss/partials/_article-lists.scss */
 .articleList--small h3 {
   padding-top: 0.3125rem;
   font-size: 1.5rem;
+}
+
+/*
+==========================================================================
+  PAGE FOOTER STYLES (scss/partials/_page-footer.scss)
+==========================================================================
+*/
+/* line 7, ../scss/partials/_page-footer.scss */
+.pageFooter {
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 0;
+  margin-bottom: 0;
+  max-width: 62.5rem;
+  margin-bottom: 6.25rem;
+  border-top: 3px solid #283e4b;
+}
+/* line 172, ../bower_components/foundation/scss/foundation/components/_global.scss */
+.pageFooter:before, .pageFooter:after {
+  content: " ";
+  display: table;
+}
+/* line 173, ../bower_components/foundation/scss/foundation/components/_global.scss */
+.pageFooter:after {
+  clear: both;
+}
+/* line 13, ../scss/partials/_page-footer.scss */
+.pageFooter p, .pageFooter address, .pageFooter li {
+  font-size: 0.8125rem;
+}
+
+/* line 18, ../scss/partials/_page-footer.scss */
+.pageFooter__container {
+  padding-top: 1.875rem;
+}
+/* line 21, ../scss/partials/_page-footer.scss */
+.pageFooter__container:first-of-type {
+  padding-left: 0.9375rem;
+  padding-right: 0.9375rem;
+  width: 58.33333%;
+  float: left;
+  padding-left: 0;
+}
+/* line 28, ../scss/partials/_page-footer.scss */
+.pageFooter__container:last-of-type {
+  padding-left: 0.9375rem;
+  padding-right: 0.9375rem;
+  width: 33.33333%;
+  float: left;
+  margin-left: 8.33333% !important;
+}
+
+/* line 36, ../scss/partials/_page-footer.scss */
+.pageFooter__contact {
+  border-style: solid;
+  border-width: 0px;
+  cursor: pointer;
+  font-family: "franklin-gothic-urw", sans-serif;
+  font-weight: 400;
+  line-height: normal;
+  margin: 0 0 1.25rem;
+  position: relative;
+  text-decoration: none;
+  text-align: center;
+  -webkit-appearance: none;
+  -webkit-border-radius: 0;
+  display: inline-block;
+  padding-top: 1rem;
+  padding-right: 2rem;
+  padding-bottom: 1.0625rem;
+  padding-left: 2rem;
+  font-size: 1rem;
+  background-color: #f74f14;
+  border-color: rgba(247, 79, 20, 0.75);
+  color: white;
+  transition: background-color 300ms ease-out;
+  float: left;
+  background: #00bedb;
+  font-family: "ff-good-headline-web-pro-con", sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 1.375rem;
+  text-transform: uppercase;
+}
+/* line 161, ../bower_components/foundation/scss/foundation/components/_buttons.scss */
+.pageFooter__contact:hover, .pageFooter__contact:focus {
+  background-color: rgba(247, 79, 20, 0.75);
+}
+/* line 167, ../bower_components/foundation/scss/foundation/components/_buttons.scss */
+.pageFooter__contact:hover, .pageFooter__contact:focus {
+  color: white;
+}
+/* line 45, ../scss/partials/_page-footer.scss */
+.pageFooter__contact:hover {
+  background: rgba(0, 190, 219, 0.6);
+}
+
+/* line 50, ../scss/partials/_page-footer.scss */
+.pageFooter__copyright {
+  display: inline-block;
+  margin-top: 0.5rem;
+  margin-bottom: 0;
+  margin-left: 1.25rem;
+  float: left;
+}
+
+/* line 58, ../scss/partials/_page-footer.scss */
+.pageFooter__ancillaryNav {
+  display: block;
+  margin-left: 1.25rem;
+  float: left;
+}
+/* line 63, ../scss/partials/_page-footer.scss */
+.pageFooter__ancillaryNav ul {
+  margin: 0 auto 1.0625rem auto;
+  margin-left: -1.375rem;
+  margin-right: 0;
+  padding: 0;
+  list-style: none;
+  overflow: hidden;
+}
+/* line 42, ../bower_components/foundation/scss/foundation/components/_inline-lists.scss */
+.pageFooter__ancillaryNav ul > li {
+  list-style: none;
+  float: left;
+  margin-left: 1.375rem;
+  display: block;
+}
+/* line 47, ../bower_components/foundation/scss/foundation/components/_inline-lists.scss */
+.pageFooter__ancillaryNav ul > li > * {
+  display: block;
+}
+/* line 67, ../scss/partials/_page-footer.scss */
+.pageFooter__ancillaryNav li {
+  position: relative;
+}
+/* line 70, ../scss/partials/_page-footer.scss */
+.pageFooter__ancillaryNav li:after {
+  content: "|";
+  display: block;
+  position: absolute;
+  right: -0.875rem;
+  top: 0;
+}
+/* line 78, ../scss/partials/_page-footer.scss */
+.pageFooter__ancillaryNav li:last-of-type:after {
+  content: "";
+}
+/* line 84, ../scss/partials/_page-footer.scss */
+.pageFooter__ancillaryNav a {
+  text-decoration: none;
+}
+
+/* line 89, ../scss/partials/_page-footer.scss */
+.pageFooter__address {
+  width: 50%;
+  float: left;
+  font-style: normal;
+}
+/* line 95, ../scss/partials/_page-footer.scss */
+.pageFooter__address a[href^="tel"] {
+  color: inherit;
+  text-decoration: none;
+  cursor: default;
+}
+
+/* line 102, ../scss/partials/_page-footer.scss */
+.pageFooter__seals {
+  width: 50%;
+  float: left;
+}
+
+/* line 107, ../scss/partials/_page-footer.scss */
+.pageFooter__socialLinks {
+  margin: 0 auto 1.0625rem auto;
+  margin-left: -1.375rem;
+  margin-right: 0;
+  padding: 0;
+  list-style: none;
+  overflow: hidden;
+  clear: both;
+  margin-left: 0;
+  padding-top: 3.125rem;
+}
+/* line 42, ../bower_components/foundation/scss/foundation/components/_inline-lists.scss */
+.pageFooter__socialLinks > li {
+  list-style: none;
+  float: left;
+  margin-left: 1.375rem;
+  display: block;
+}
+/* line 47, ../bower_components/foundation/scss/foundation/components/_inline-lists.scss */
+.pageFooter__socialLinks > li > * {
+  display: block;
+}
+/* line 113, ../scss/partials/_page-footer.scss */
+.pageFooter__socialLinks li {
+  margin-left: 0.9375rem;
+}
+/* line 115, ../scss/partials/_page-footer.scss */
+.pageFooter__socialLinks li:first-of-type {
+  margin-left: 0;
+}
+/* line 118, ../scss/partials/_page-footer.scss */
+.pageFooter__socialLinks li:last-of-type {
+  margin-left: 0.625rem;
+}
+/* line 122, ../scss/partials/_page-footer.scss */
+.pageFooter__socialLinks a {
+  display: block;
+  width: 20px;
+  height: 20px;
+  text-indent: -999999px;
+}
+/* line 128, ../scss/partials/_page-footer.scss */
+.pageFooter__socialLinks a.twitter {
+  background-image: url(../img/icon-twitter-128x128.png);
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+}
+/* line 133, ../scss/partials/_page-footer.scss */
+.pageFooter__socialLinks a.rss {
+  background-image: url(../img/icon-rss-128x128.png);
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+}
+/* line 138, ../scss/partials/_page-footer.scss */
+.pageFooter__socialLinks a.facebook {
+  background-image: url(../img/icon-facebook-128x128.png);
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
 }

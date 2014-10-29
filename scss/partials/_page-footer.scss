@@ -1,0 +1,144 @@
+/*
+==========================================================================
+  PAGE FOOTER STYLES (scss/partials/_page-footer.scss)
+==========================================================================
+*/
+
+.pageFooter {
+  @include grid-row(); // Foundation
+  margin-bottom: 6.25rem;
+
+  border-top: 3px solid $navyBlue; 
+
+  p, address, li {
+    font-size: 0.8125rem;
+  }
+}
+
+.pageFooter__container {
+  padding-top: 1.875rem;
+
+  &:first-of-type {
+    @include grid-column( // Foundation
+      $columns:7
+    );
+    padding-left: 0;
+  }
+
+  &:last-of-type {
+    @include grid-column( // Foundation
+      $columns:4,
+      $offset:1
+    );
+  }
+}
+
+.pageFooter__contact {
+  @include button();
+  float: left;
+
+  background: $brightBlue;
+  @include font-family-good-headline-medium;
+  font-size: 1.375rem;
+  text-transform: uppercase;
+  
+  &:hover {
+    background: $brightBlue-60;
+  }
+}
+
+.pageFooter__copyright {
+  display: inline-block;
+  margin-top: 0.5rem;
+  margin-bottom: 0;
+  margin-left: 1.25rem;
+  float: left;
+}
+
+.pageFooter__ancillaryNav {
+  display: block;
+  margin-left: 1.25rem;
+  float: left;
+
+  ul {
+    @include inline-list();
+  }
+
+  li {
+    position: relative;
+
+    &:after {
+      content: "|";
+      display: block;
+      position: absolute;
+      right: -0.875rem;
+      top: 0;
+    }
+    &:last-of-type {
+      &:after {
+        content: "";
+      }
+    }
+  }
+
+  a {
+    text-decoration: none;
+  }
+}
+
+.pageFooter__address {
+  width: 50%;
+  float: left;
+
+  font-style: normal;
+
+  a[href^="tel"] {
+    color: inherit;
+    text-decoration: none;
+    cursor: default;
+  }
+}
+
+.pageFooter__seals {
+  width: 50%;
+  float: left;
+}
+
+.pageFooter__socialLinks {
+  @include inline-list(); // Foundation
+  clear: both;
+  margin-left: 0;
+  padding-top: 3.125rem;
+  
+  li {
+    margin-left: 0.9375rem;
+    &:first-of-type {
+      margin-left: 0;
+    }
+    &:last-of-type {
+      margin-left: 0.625rem;
+    }
+  }
+  a {
+    display: block;
+    width: 20px;
+    height: 20px;
+    text-indent: -999999px;
+
+    &.twitter {
+      background-image: url(../img/icon-twitter-128x128.png);
+      background-size: 100% 100%;
+      background-repeat: no-repeat;
+    }
+    &.rss {
+      background-image: url(../img/icon-rss-128x128.png);
+      background-size: 100% 100%;
+      background-repeat: no-repeat;
+    }
+    &.facebook {
+      background-image: url(../img/icon-facebook-128x128.png);
+      background-size: 100% 100%;
+      background-repeat: no-repeat;
+    }
+  }
+}
