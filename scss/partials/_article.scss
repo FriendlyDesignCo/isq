@@ -1,0 +1,146 @@
+/*
+==========================================================================
+  ARTICLE STYLES (scss/partials/_article.scss)
+==========================================================================
+*/
+
+.article__full {
+  header {
+    @include grid-column( // Foundation
+      $columns:11,
+      $push:1
+    );
+    margin-top: 100px;
+    margin-bottom: 40px;
+    padding-right: 0;
+    
+    h2 {
+      font-size: 4.5rem;
+      line-height: 1;
+    }
+    h3 {
+      color: $coolGrayLight;
+      @include font-family-good-headline-medium-italic;
+      font-size: 2.5rem;
+      line-height: 1;
+    }
+  }
+
+  blockquote {
+    @include grid-column(
+      $columns: 14,
+      $offset: -2
+    );
+  }
+}
+
+.article__metadata {
+  margin-top: 50px;
+  padding-top: 0.625rem;
+  padding-bottom: 0.625rem;
+
+  border-top: 1px solid $coolGrayLight;
+  border-bottom: 1px solid $coolGrayLight;
+  text-transform: uppercase;
+
+  > ul {
+    @include inline-list; // Foundation
+    margin-bottom: 0;
+
+    li {
+      color: $navyBlue;
+      @include font-family-good-headline-book-italic;
+
+      &:last-of-type {
+        float: right;
+      }
+
+      > * {
+        display: inline;
+      }
+
+      span {
+        color: $coolGrayLight;
+      }
+    }
+  }
+}
+
+.article__taglist {
+    @include inline-list;
+    display: inline;
+    float: right;
+
+    margin-left: 0;
+    margin-bottom: 0;
+
+    li {
+      margin-left: 0.1875rem;
+      &:last-of-type {
+        a:after {
+          content: "";
+        }
+      }
+    }
+
+    a {
+      color: $brightBlue;
+      text-decoration: none;
+
+      &:hover {
+        color: $orange;
+      }
+
+      &:after {
+        content:", ";
+        display: inline;
+      }
+    }
+}
+
+.article__contentContainer {
+  @include grid-column(
+    $columns: 7,
+    $offset: 1
+  );
+}
+
+.article__content {
+  > p:last-of-type {
+    &:after {
+      content: " ";
+      display: inline-block;
+      width: 1.0625rem;
+      height: 1.0625rem;
+
+      position: relative;
+      margin-left: 0.625rem;
+      top: 0.1875rem;
+
+      background-image: url(../img/logo-isq-online-300x300.png);
+      background-repeat: no-repeat;
+      background-size: 100% 100%;
+    }
+  }
+}
+
+.article__articleListAside {
+  @include grid-column(
+    $columns: 6,
+    $offset: -2
+  );
+  // margin-left: -16.66667%;
+  margin-right: $column-gutter;
+  border: 1px solid $coolGrayLight;
+}
+
+.comments {
+  margin-bottom: 6.25rem;
+  h6 {
+    padding-top: 0.5rem;
+    padding-bottom: 0.6rem;
+
+    border-top: 3px solid $navyBlue;
+    border-bottom: 1px solid $coolGrayLight;
+  }
+}

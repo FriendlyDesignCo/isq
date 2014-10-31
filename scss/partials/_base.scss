@@ -59,3 +59,9 @@ h3 {
 h6 {
   font-size: 1.125rem;
 }
+
+blockquote {
+	@include font-family-good-headline-medium;
+	font-size: 2.5rem;
+	line-height: 1.1;
+}

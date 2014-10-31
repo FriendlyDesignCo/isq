@@ -9,6 +9,10 @@
   position: relative;
 
   border-bottom: 1px solid $coolGrayLight;
+
+  .pageHeader__titleLink {
+    text-decoration: none;
+  }
   
   h1 {
     padding-top: 3.125rem;
