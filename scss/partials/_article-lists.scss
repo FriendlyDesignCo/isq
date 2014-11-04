@@ -10,7 +10,7 @@
   h6 {
     padding-top: 0.625rem;
     border-top: 3px solid $navyBlue;
-    color: $coolGrayLight;
+    color: $black-30;
     text-transform: uppercase;
   }
 
@@ -34,6 +34,13 @@
     @include font-family-good-headline-book;
     font-size: 1.125rem;
   }
+  .article__byline {
+    display: block;
+    
+    color: $black-30;
+    @include font-family-good-headline-book-italic;
+    text-transform: uppercase;
+  }
   .article__comments {
     color: $black-20;
     font-size: 0.9375rem;
@@ -43,28 +50,12 @@
       color: $orange;
     }
   }
-
-  .articleList__readFull {
-    @include button( // Foundation
-      $padding: 1rem,
-      $full-width: true
-    );
-    background: $brightBlue;
-    @include font-family-good-headline-medium;
-    font-size: 1.75rem;
-    text-transform: uppercase;
-
-    &:hover {
-      background: $brightBlue-60;
-    }
-  }
 }
 
 .articleList--large {
-  @include grid-column( // Foundation
-    $columns:8
-  );
-  padding-left: 0;
+  @media #{$large-up} {
+    padding-left: 0;
+  }
 
   .article {
     padding-left: 5.625rem;
@@ -98,10 +89,9 @@
 
 
 .articleList--small {
-  @include grid-column( // Foundation
-    $columns:4
-  );
-  padding-right: 0;
+  @media #{$large-up} {
+    padding-right: 0;
+  }
 
   h3 {
     padding-top: 0.3125rem;

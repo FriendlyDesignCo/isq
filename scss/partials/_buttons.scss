@@ -1,0 +1,51 @@
+/*
+==========================================================================
+  BUTTON STYLES (scss/partials/_buttons.scss)
+==========================================================================
+*/
+// These styles modify the default Foundation button styles.
+.button {
+
+  // DEFAULT BUTTONS
+  // eg. "Contact ISQ Online" in the page footer
+  @include button();
+
+  background: $brightBlue;
+  @include font-family-good-headline-medium;
+  font-size: 1.375rem;
+  text-transform: uppercase;
+  
+  &:hover {
+    background: $brightBlue-60;
+  }
+
+
+  // TINY BUTTONS
+  // eg. "Read More" button on homepage callout
+  &.tiny {
+    @include button( // Foundation
+      $padding: 0.25rem
+    );
+    
+    @include font-family-good-headline-medium;
+    font-size: 1.375rem;
+    text-transform: uppercase;
+  }
+
+  // EXPANDED BUTTONS
+  // eg. "Read Full Issue" button on sidebar article lists
+  &.expand {
+    @include button( // Foundation
+      $padding: 1rem,
+      $full-width: true
+    );
+    background: $brightBlue;
+    @include font-family-good-headline-medium;
+    font-size: 1.75rem;
+    text-transform: uppercase;
+
+    &:hover {
+      background: $brightBlue-60;
+    }
+  }
+}

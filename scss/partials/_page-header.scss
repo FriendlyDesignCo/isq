@@ -8,7 +8,15 @@
   @include grid-row();
   position: relative;
 
-  border-bottom: 1px solid $coolGrayLight;
+  @media #{$small-up} {
+    padding-left: $column-gutter / 2;
+    padding-right: $column-gutter / 2;
+  }
+
+  @media #{$large-up} {
+    padding-left: 0;
+    padding-right: 0;
+  }
 
   .pageHeader__titleLink {
     text-decoration: none;
@@ -21,59 +29,85 @@
 
     margin-bottom: 0;
 
-    font-size: 5.3125rem;
     background-image: url(../img/logo-isq-online-300x300.png);
     background-size: 70px 70px;
     background-repeat: no-repeat;
     background-position: 0 3.25rem;
     border-bottom: 3px solid $navyBlue;
-    line-height: 4.5625rem;
+    line-height: 0.86;
     text-transform: uppercase;
+
+    @media #{$small-up} {
+      font-size: 2.8rem;
+    }
+
+    @media #{$medium-up} {
+      font-size: 4.3125rem;
+      background-position: 0 3rem;
+    }    
+
+    @media #{$large-up} {
+      font-size: 5.3125rem;
+    }
   }
 }
 
 .pageHeader__nav {
+  padding-bottom: 2px;
+  border-bottom: 1px solid $coolGrayLight;
 
-  ul {
-    @include button-group-container(); // Foundation
+  @media #{$large-up} {
+    padding-left: 0;
+    padding-right: 0;
   }
-  
-  li {
-    @include button-group-style(); // Foundation
-    margin-left: 0;
 
-    &:first-of-type {
+  // Main navigation
+  // .top-bar {
+  //   background:  !important;
+  // }
+  .top-bar-section.left {
+    @media #{$small-up} {
+      top: 44px;
+    }
+    @media #{$large-up} {
+      top: auto;
+    }
+
+    // Overwriting Foundation defaults
+    ul li:first-of-type {
       a {
-        padding-left: 0 !important;
+        @media #{$large-up} {
+          padding-left: 0;
+        }
       }
     }
+    li,
+    a {
+      background: none !important;
+      text-decoration: none;
+    }
   }
-  
-  a {
-    @include button(); // Foundation
 
-    margin-bottom: 0;
-    padding-left: 0.75rem !important;
-    padding-right: 0.75rem !important;
-    
-    background: none;
-    color: $navyBlue;
-    @include font-family-good-headline-medium;
-    font-size: 1.125rem !important;
-    text-transform: uppercase;
-    @include transition(200ms);
+  // Mobile toggle positioning
+  .toggle-topbar.menu-icon {
+    top: 22px;
+    left: -15px;
+    right: auto;
 
-    &:hover {
-      background: none;
-      color: $orange;
+    a {
+      text-decoration: none;
     }
   }
 }
 
 .pageHeader__search {
-  position: absolute; 
-  right: 0;
-  bottom: .4375rem;
+  @media #{$small-up} {
+    margin-top: 0.5rem;
+  }
+
+  @media #{$large-up} {
+    margin-top: 0;
+  }
 
   input[type=text] {
     width: 200px;

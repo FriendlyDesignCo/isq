@@ -28,12 +28,39 @@ select,
 textarea {
 	
 }
-
-html {
-	
+html,body {
+	height: auto;
+	min-height: 100%;
 }
 body {
+	background-image: url(../img/background-map-2162x1026.gif);
+	background-repeat: repeat-x;
+	background-size: 1081px 513px;
+	background-position: 750px 60px;
 	padding-top: 70px; // Brand Bar height
+
+	&:after {
+		content: " ";
+		display: block;
+		height: 513px;
+
+		position: absolute;
+		bottom: -200px;
+		right: 0;
+		left: 0;
+		z-index: -1;
+
+		background-image: url(../img/background-map-2162x1026.gif);
+		background-repeat: repeat-x;
+		background-size: 1081px 513px;
+		background-position: 750px bottom;
+
+		-webkit-transform: rotate(180deg);
+    -moz-transform: rotate(180deg);
+    -ms-transform: rotate(180deg);
+    -o-transform: rotate(180deg);
+    transform: rotate(180deg);
+	}
 }
 
 a,

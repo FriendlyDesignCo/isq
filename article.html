@@ -40,26 +40,34 @@
         </h1>
       </a>
 
-      <nav class="pageHeader__nav">
-        <ul>
-          <li><a href="#" class="small button">In Print</a></li>
-          <li><a href="#" class="small button">About</a></li>
-          <li><a href="#" class="small button">Link Round-Ups</a></li>
-          <li><a href="#" class="small button">Symposia</a></li>
-          <li><a href="#" class="small button">Editors&rsquo; Blog</a></li>
-          <li><a href="#" class="small button">Current Events</a></li>
-          <li><a href="#" class="small button">Submit a Manuscript</a></li>
+      <nav class="pageHeader__nav top-bar" data-topbar role="navigation">
+        <ul class="title-area">
+          <li class="toggle-topbar menu-icon"><a href="#"><span>Menu</span></a></li>
         </ul>
-      </nav>
 
-      <form class="pageHeader__search">
-        <input type="text" placeholder="Search ISQ" />
-      </form>
+        <section class="top-bar-section left">
+          <ul>
+            <li><a href="#">In Print</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Link Round-Ups</a></li>
+            <li><a href="#">Symposia</a></li>
+            <li><a href="#">Editors&rsquo; Blog</a></li>
+            <li><a href="#">Current Events</a></li>
+            <li><a href="#">Submit a Manuscript</a></li>
+          </ul>
+        </section>
+
+        <section class="top-bar-section right">
+          <form class="pageHeader__search">
+            <input type="text" placeholder="Search ISQ" />
+          </form>
+        </section>
+      </nav>
     </header>
     <!-- END PAGE HEADER -->
 
     
-    <div class="contentContainer">
+    <div class="row">
       <!-- ARTICLE -->
       <article class="article__full">
         <header>
@@ -81,7 +89,7 @@
           </div>
         </header>
         
-        <div class="article__contentContainer">
+        <div class="article__contentContainer columns large-7 large-offset-1 medium-7 medium-offset-1 small-12">
           <section class="article__content">
             <aside class="article__articleListAside">
               <h6>In This Symposium</h6>
@@ -124,7 +132,7 @@
       <!-- END ARTICLE -->
 
       <!-- SIDEBAR -->
-      <section class="articleList--small">
+      <section class="articleList--small columns large-4 medium-4 small-12">
         <header>
           <h6>Current Issue</h6>
         </header>
@@ -134,7 +142,7 @@
             <h3><a href="article.html">What Do Policymakers Want From Us? Results of a Survey of Current and Former Senior National Security Decision Makers</a></h3>
           </header>
           <footer class="article__actions">
-            <span>By Lorem Ipsum</span>
+            <span class="article__byline">By Lorem Ipsum</span>
             <a href="article.html">Read More</a>
           </footer>
         </article>
@@ -144,7 +152,7 @@
             <h3><a href="article.html">Dependent Diplomacy: Signaling, Strategy, and Prestige in the Diplomatic Network</a></h3>
           </header>
           <footer class="article__actions">
-            <span>By Lorem Ipsum</span>
+            <span class="article__byline">By Lorem Ipsum</span>
             <a href="article.html">Read More</a>
           </footer>
         </article>
@@ -154,12 +162,12 @@
             <h3><a href="article.html">What Do Policymakers Want From Us? Results of a Survey of Current and Former Senior National Security Decision Makers</a></h3>
           </header>
           <footer class="article__actions">
-            <span>By Lorem Ipsum</span>
+            <span class="article__byline">By Lorem Ipsum</span>
             <a href="article.html">Read More</a>
           </footer>
         </article>
 
-        <a href="#" class="articleList__readFull">Read Full Issue</a>
+        <a href="#" class="articleList__readFull button expand">Read Full Issue</a>
       </section>
       <!-- END SIDEBAR -->
     </div> <!-- .contentContainer -->
@@ -169,7 +177,7 @@
       <div class="pageFooter__container">
         <p class="pageFooter__description">Representing 80 countries, ISA has over 6,500 members worldwide and is the most respected and widely known scholarly association in this field. Endeavoring to create communities of scholars dedicated to international studies, ISA is divided into 6 geographic subdivisions of ISA (Regions), 28 thematic groups (Sections) and 3 Caucuses which provide opportunities to exchange ideas and research with local colleagues and within specific subject areas.</p>
         
-        <a href="#" class="pageFooter__contact">Contact ISQ Online</a>
+        <a href="#" class="pageFooter__contact button">Contact ISQ Online</a>
         
         <p class="pageFooter__copyright">Copyright 2014 by the International Studies Association.</p>
         

@@ -17,11 +17,26 @@
   .brandBar__container {
     @include grid-row();
     position: relative;
+
+    @media #{$small-up} {
+      padding-left: $column-gutter / 2;
+      padding-right: $column-gutter / 2;
+    }
+
+    @media #{$large-up} {
+      padding-left: 0;
+      padding-right: 0;
+    }
   }
 }
 
 .brandBar__search {
-  width: 240px;
+  @media #{$small-up} {
+    width: 75px;
+  }
+  @media #{$large-up} {
+    width: 240px;
+  }
   
   float: left;
 
@@ -64,5 +79,10 @@
 
   position: absolute;
   top: -5px;
-  right: 0;
+  @media #{$small-up} {
+    right: $column-gutter / 2;
+  }
+  @media #{$large-up} {
+    right: 0;
+  }
 }
