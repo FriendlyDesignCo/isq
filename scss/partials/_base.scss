@@ -68,6 +68,10 @@ input[type=text] {
 	@include transition(200ms);
 }
 
+a:active {
+	opacity: 0.6;
+}
+
 .contentContainer {
 	@include grid-row();
 }

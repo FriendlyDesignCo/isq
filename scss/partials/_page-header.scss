@@ -36,14 +36,21 @@
     border-bottom: 3px solid $navyBlue;
     line-height: 0.86;
     text-transform: uppercase;
-
+    
+    @media screen and (max-width: 500px) {
+      padding-left: 4.375rem;
+      font-size: 2.1rem !important;
+      background-size: 50px 50px;
+      background-position: 0 2.7rem !important;
+    }
     @media #{$small-up} {
-      font-size: 2.8rem;
+      font-size: 3.2rem;
+      background-position: 0 2.6rem;
     }
 
     @media #{$medium-up} {
-      font-size: 4.3125rem;
-      background-position: 0 3rem;
+      font-size: 4.78rem;
+      background-position: 0 2.9rem;
     }    
 
     @media #{$large-up} {
@@ -62,10 +69,8 @@
   }
 
   // Main navigation
-  // .top-bar {
-  //   background:  !important;
-  // }
   .top-bar-section.left {
+    width: 100%;
     @media #{$small-up} {
       top: 44px;
     }
@@ -74,6 +79,12 @@
     }
 
     // Overwriting Foundation defaults
+    ul {
+      @media #{$small-up} {
+        width: 100%;
+        border-top: 1px solid $coolGrayLight;
+      }
+    }
     ul li:first-of-type {
       a {
         @media #{$large-up} {
@@ -85,6 +96,20 @@
     a {
       background: none !important;
       text-decoration: none;
+
+      @media #{$small-only} {
+        padding-left: 0;
+        font-size: $paragraph-font-size + 0.5;
+        line-height: 0.75;
+      }
+      @media #{$medium-only} {
+        padding-left: 0;
+        font-size: $paragraph-font-size + 0.5;
+        line-height: 0.75;
+      }
+      @media #{$large-up} {
+        
+      }
     }
   }
 
@@ -98,9 +123,16 @@
       text-decoration: none;
     }
   }
+  // Mobile state bugfix
+  &.top-bar.expanded {
+    padding-bottom: 3rem;
+  }
 }
 
 .pageHeader__search {
+  position: absolute;
+  right: 0;
+
   @media #{$small-up} {
     margin-top: 0.5rem;
   }
@@ -124,5 +156,9 @@
     font-size: 1.125rem !important;
     text-align: right;
     text-transform: uppercase;
+
+    &:focus {
+      background-color: $white;
+    }
   }
 }

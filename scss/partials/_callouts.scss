@@ -7,16 +7,22 @@
 .callout {
   @media #{$small-up} {
     @include grid-column( // Foundation
-      $columns:10,
+      $columns:12,
       $center:true
     );
     padding-top: 1.125rem;
     padding-bottom: 1.125rem;
   }
+  @media #{$medium-up} {
+    @include grid-column( // Foundation
+      $columns:8,
+      $center:true
+    );
+  }
 
   @media #{$large-up} {
     @include grid-column( // Foundation
-      $columns:6,
+      $columns:7,
       $center:true
     );
     padding-top: 3.125rem;

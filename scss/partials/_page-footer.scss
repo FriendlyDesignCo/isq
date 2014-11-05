@@ -6,10 +6,10 @@
 
 .pageFooter {
   @include grid-row(); // Foundation
-  margin-bottom: 6.25rem;
+  margin-bottom: 3.125rem;
 
   @media #{$small-up} {
-    margin-top: 6.25rem;
+    margin-top: 3.125rem;
     padding-left: $column-gutter / 2;
     padding-right: $column-gutter / 2;
   }
@@ -38,6 +38,9 @@
       @include grid-column( // Foundation
         $columns:12
       );
+      padding-left: 0;
+      padding-right: 0;
+      
       border-top: 3px solid $navyBlue; 
     }
     @media #{$large-up} {
@@ -53,6 +56,8 @@
       @include grid-column( // Foundation
         $columns:12
       );
+      padding-left: 0;
+      padding-right: 0;
     }
     @media #{$large-up} {
       @include grid-column( // Foundation

@@ -10,8 +10,8 @@
       @include grid-column( // Foundation
         $columns:12
       );
-      margin-top: 50px;
-      margin-bottom: 20px;
+      margin-top: 1.125rem;
+      margin-bottom: 1.125rem;
     }
 
     @media #{$large-up} {
@@ -19,8 +19,8 @@
         $columns:11,
         $push:1
       );
-      margin-top: 100px;
-      margin-bottom: 40px;
+      margin-top: 3.125rem;
+      margin-bottom: 1.25rem;
       padding-right: 0;
     }
     
@@ -65,13 +65,19 @@
 }
 
 .article__metadata {
-  margin-top: 50px;
   padding-top: 0.625rem;
   padding-bottom: 0.625rem;
 
   border-top: 1px solid $coolGrayLight;
   border-bottom: 1px solid $coolGrayLight;
   text-transform: uppercase;
+
+  @media #{$small-up} {
+    margin-top: 1.7rem;
+  }
+  @media #{$medium-up} {
+    margin-top: 5rem;
+  }
 
   > ul {
     @include inline-list; // Foundation
@@ -145,7 +151,7 @@
       margin-left: 0.625rem;
       top: 0.1875rem;
 
-      background-image: url(../img/logo-isq-online-300x300.png);
+      background-image: url(../img/logo-isq-51x51.png);
       background-repeat: no-repeat;
       background-size: 100% 100%;
     }
@@ -204,7 +210,12 @@
 }
 
 .comments {
-  margin-bottom: 6.25rem;
+  @media #{$small-up} {
+    margin-bottom: 6.25rem;
+  }
+  @media #{$medium-up} {
+    margin-bottom: 0;
+  }
   h6 {
     padding-top: 0.5rem;
     padding-bottom: 0.6rem;

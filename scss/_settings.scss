@@ -155,8 +155,8 @@ $body-font-style: normal;
 // d. Media Query Ranges
 // - - - - - - - - - - - - - - - - - - - - - - - - -
 
-$small-range: (0em, 40em); /* 0, 640px */
-$medium-range: (40.063em, 64em); /* 641px, 1024px */
+$small-range: (0em, 43.75em); /* 0, 700px */
+$medium-range: (43.8125em, 64em); /* 701px, 1024px */
 $large-range: (64.063em, 90em); /* 1025px, 1440px */
 $xlarge-range: (90.063em, 120em); /* 1441px, 1920px */
 $xxlarge-range: (120.063em); /* 1921px */

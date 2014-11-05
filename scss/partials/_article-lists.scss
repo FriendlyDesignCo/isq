@@ -16,6 +16,9 @@
 
   h3 {
     border-top: 1px solid $coolGrayLight;
+    line-height: 1.15;
+    padding-top: 0.5rem;
+
     a {
       text-decoration: none;
       color: inherit;
@@ -58,31 +61,63 @@
   }
 
   .article {
-    padding-left: 5.625rem;
+    @media #{$small-up} {
+      padding-left: 4.375rem;
+    }
+    @media #{$medium-up} {
+      padding-left: 5.625rem;
+    }
 
-    &.pointer {
+    &.roundUp {
       background-image: url(../img/article-pointer-200x200.png);
       background-repeat: no-repeat;
-      background-size: 70px 70px;
       background-position: 0 0;
+
+      @media #{$small-up} {
+        background-size: 3.125rem 3.125rem;
+      }
+      @media #{$medium-up} {
+        background-size: 4.375rem 4.375rem;
+      }
     }
-    &.bubbles {
+    &.symposia {
       background-image: url(../img/article-bubbles-200x200.png);
       background-repeat: no-repeat;
-      background-size: 70px 70px;
       background-position: 0 0;
+
+      @media #{$small-up} {
+        background-size: 3.125rem 3.125rem;
+      }
+      @media #{$medium-up} {
+        background-size: 4.375rem 4.375rem;
+      }
+
     }
-    &.pencil {
+    &.editorsBlog {
       background-image: url(../img/article-pencil-200x200.png);
       background-repeat: no-repeat;
-      background-size: 70px 70px;
       background-position: 0 0;
+
+      @media #{$small-up} {
+        background-size: 3.125rem 3.125rem;
+      }
+      @media #{$medium-up} {
+        background-size: 4.375rem 4.375rem;
+      }
+
     }
-    &.tower {
+    &.currentEvent  {
       background-image: url(../img/article-tower-200x200.png);
       background-repeat: no-repeat;
-      background-size: 70px 70px;
       background-position: 0 0;
+
+      @media #{$small-up} {
+        background-size: 3.125rem 3.125rem;
+      }
+      @media #{$medium-up} {
+        background-size: 4.375rem 4.375rem;
+      }
+
     }
   }
 }
