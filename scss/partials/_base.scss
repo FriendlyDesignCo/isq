@@ -65,7 +65,7 @@ body {
 
 a,
 input[type=text] {
-	@include transition(200ms);
+	@include transition(250ms);
 }
 
 a:active {
