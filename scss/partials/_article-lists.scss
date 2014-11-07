@@ -36,6 +36,10 @@
   .article__actions {
     @include font-family-good-headline-book;
     font-size: 1.125rem;
+
+    a {
+      margin-right: 0.625rem;
+    }
   }
   .article__byline {
     display: block;
