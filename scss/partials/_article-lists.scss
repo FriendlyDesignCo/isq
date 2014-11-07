@@ -128,8 +128,29 @@
     padding-right: 0;
   }
 
+  &.two-col {
+    @media #{$small-up} {
+      padding-left: 0;
+      padding-right: 0;
+    }
+    @media #{$large-up} {
+      padding-left: $column-gutter / 2;
+      padding-right: $column-gutter / 2;
+    }
+
+    article {
+      @include grid-column( // Foundation
+        $columns:6
+      );
+
+      &:nth-child(2n+1) {
+        clear: left;
+      }
+    }
+  }
+
   h3 {
-    padding-top: 0.3125rem;
+    padding-top: 0.5rem;
     font-size: 1.5rem;
   }
 }

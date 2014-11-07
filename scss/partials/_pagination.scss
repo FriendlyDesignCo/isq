@@ -1,0 +1,54 @@
+/*
+==========================================================================
+  PAGINATION STYLES (scss/partials/_pagination.scss)
+==========================================================================
+*/
+
+ul.pagination {
+  padding-top: 0.625rem;
+
+  border-top: 1px solid $coolGrayLight;
+  @include font-family-good-headline-medium;
+  font-size: 1.125rem;
+  text-transform: uppercase;
+
+  li {
+    margin-left: 0;
+    width: 33.3%;
+
+    color: $black-30;
+    font-size: 1.125rem;
+
+    &:nth-of-type(2) {
+      text-align: center;
+    }
+
+    &:last-of-type {
+      text-align: right;
+    }
+
+    &.arrow {
+      span {
+        position: relative;
+        top: 0.1875rem;
+
+        font-size: 2rem;
+        line-height: 0;
+      }
+    }
+
+    a {
+      padding: 0;
+
+      color: $navyBlue;
+      text-decoration: none;
+
+      @include transition(250ms);
+
+      &:hover {
+        background: none;
+        color: $orange;
+      }
+    }
+  }
+}

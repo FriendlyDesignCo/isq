@@ -1,0 +1,82 @@
+/*
+==========================================================================
+  PAGE STYLES (scss/partials/_page.scss)
+==========================================================================
+*/
+
+.page {
+  header {
+    @media #{$small-up} {
+      margin-top: 1.125rem;
+      margin-bottom: 1.125rem;
+    }
+
+    @media #{$large-up} {
+      margin-top: 3.125rem;
+      margin-bottom: 1.25rem;
+      padding-right: 0;
+    }
+    
+    h2 {
+      margin-bottom: 3.125rem;
+
+      text-align: center;
+      @media #{$small-up} {
+        font-size: 2.5rem;
+      }
+      @media #{$medium-up} {
+        font-size: 4.5rem;
+      }
+      line-height: 1;
+    }
+    h3 {
+      color: $coolGrayLight;
+      @include font-family-good-headline-medium-italic;
+      line-height: 1;
+
+      @media #{$small-up} {
+        font-size: 1.5rem;
+      }
+      @media #{$medium-up} {
+        font-size: 2.5rem;
+      }
+    }
+  }
+
+  .subnavigation {
+    margin-bottom: 3.125rem;
+    padding-top: 0.4375rem;
+    padding-bottom: 0.4375rem;
+
+    border-top: 1px solid $coolGrayLight;
+    border-bottom: 1px solid $coolGrayLight;
+
+    .sub-nav {
+      margin-bottom: 0;
+      text-align: center;
+
+      dd {
+        display: inline-block;
+        float: none;
+        margin: 0;
+
+        @include font-family-good-headline-medium;
+        font-size: 1.125rem;
+        text-transform: uppercase;
+      }
+
+      a {
+        padding: 0.9375rem;
+        color: $navyBlue;
+
+        &:hover {
+          color: $orange;
+        }
+      }
+    }
+  }
+
+  h3 {
+    text-align: center;
+  }
+}
