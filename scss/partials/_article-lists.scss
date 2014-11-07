@@ -139,9 +139,16 @@
     }
 
     article {
-      @include grid-column( // Foundation
-        $columns:6
-      );
+      @media #{$small-up} {
+        @include grid-column( // Foundation
+          $columns:12
+        );
+      }
+      @media #{$medium-up} {
+        @include grid-column( // Foundation
+          $columns:6
+        );
+      }
 
       &:nth-child(2n+1) {
         clear: left;

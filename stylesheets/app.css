@@ -10168,18 +10168,29 @@ blockquote {
     padding-right: 0.9375rem;
   }
 }
-/* line 141, ../scss/partials/_article-lists.scss */
-.articleList--small.two-col article {
-  padding-left: 0.9375rem;
-  padding-right: 0.9375rem;
-  width: 50%;
-  float: left;
+@media only screen {
+  /* line 141, ../scss/partials/_article-lists.scss */
+  .articleList--small.two-col article {
+    padding-left: 0.9375rem;
+    padding-right: 0.9375rem;
+    width: 100%;
+    float: left;
+  }
 }
-/* line 146, ../scss/partials/_article-lists.scss */
+@media only screen and (min-width: 43.8125em) {
+  /* line 141, ../scss/partials/_article-lists.scss */
+  .articleList--small.two-col article {
+    padding-left: 0.9375rem;
+    padding-right: 0.9375rem;
+    width: 50%;
+    float: left;
+  }
+}
+/* line 153, ../scss/partials/_article-lists.scss */
 .articleList--small.two-col article:nth-child(2n+1) {
   clear: left;
 }
-/* line 152, ../scss/partials/_article-lists.scss */
+/* line 159, ../scss/partials/_article-lists.scss */
 .articleList--small h3 {
   padding-top: 0.5rem;
   font-size: 1.5rem;
